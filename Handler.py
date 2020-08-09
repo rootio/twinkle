@@ -25,8 +25,7 @@ if os.environ["TWINKLE_TRIGGER"] == "in_call":
             print "action=autoanswer"
         else:
             print "action=reject"
-    except Exception as e:
-        print e
+    except:
         print "action=reject"
     sys.exit()
 
